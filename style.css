@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color, border-color 0.5s ease-in-out;
+}
+
+body {
+    background-color: rgb(228, 241, 247);
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.box ul {
+    color: rgb(119, 117, 117);
+}
+
+.box-title {
+
+    font-weight: 600;
+}
+
+.price {
+    font-size: 2rem;
+    color: rgb(6, 193, 255);
+
+}
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+li i {
+    padding: 10px;
+    color: rgb(28, 226, 94);
+}
+
+a.choose-plan {
+    
+    text-decoration: none;
+    border: none;
+    background-color: rgba(16, 140, 255, 1);
+    color: #fff;
+    padding: 13px 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+a.choose-plan:hover {
+    border: 1px solid  rgba(16, 140, 255, 1);
+    background-color: #fff;
+    color: rgb(6, 193, 255);
+}
+
+.box.starter {
+    border-top: 15px solid rgba(22, 182, 182, 0.25);
+}
+
+.box.standard {
+    border-top: 15px solid rgba(22, 182, 182, 0.50);
+    border-color: green;
+    border-radius: 1rem;
+}
+
+.box.premium {
+    border-top: 15px solid rgba(22, 182, 182, 0.75);
+}
+
+.box.platinum {
+    border-top: 15px solid rgba(22, 182, 182, 1);
+}
+
+.box:hover {
+    border-radius: 1rem;
+    border-color: green;
+    
+}
+
+@media screen and (max-width: 1090px) {
+    .boxes {
+        flex-direction: column;
+        padding: 0 20%;
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .boxes {
+        flex-direction: column;
+        padding: 0 9%;
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        margin-top: 2rem;
+    }
+}
